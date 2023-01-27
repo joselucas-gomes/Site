@@ -1,0 +1,302 @@
+
+body{
+    font-family: Arial;
+    background-color: white;
+    background-image: url("fundo-site.webp");
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* cabeçalho */
+
+header#cabecalho{
+    height: 30%;
+    background-color: #1e81b0; /* 'Azul' */
+    width: 100%;
+    margin: 0px;
+    position: relative;
+
+}
+
+header#cabecalho .menu{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: cursive;
+    padding: 0;
+    background-color: rgb(52, 53, 58);
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 38%;
+    z-index: 1;
+
+}
+
+header#cabecalho .menu li{
+    border:1px solid #c0c0c0;
+    display: flex;
+    
+}
+
+header#cabecalho .menu li a{
+    color:white;
+    text-decoration:none;
+    padding:5px 10px;
+    display:inline-block;
+    transition: color 1s;
+}
+
+header#cabecalho .menu li a:hover{
+    color: yellow;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+
+header#cabecalho a h1{
+    font-family: cursive;
+    font-size: 32pt;
+    color: black;
+    padding-top: 75px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-decoration: none;
+
+}
+
+
+
+
+header#cabecalho input#busca{
+    border-radius: 20px;
+    height:40px;
+    width:450px;
+    position: absolute;
+    left: 70%;
+    top: 70px;
+}
+
+header#cabecalho #btnBusca{
+    position: absolute;
+    left: 91%;
+    top: 80px; 
+	width: 2%;
+	height: 2.5%; 
+	float: left;
+    border: none;
+    background-color: white;
+
+}
+
+
+/* Menu dos produtos */
+
+
+header#cabecalho #produtos{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: cursive;
+    padding: 0;
+    background-color: rgb(41, 41, 46);
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    right: 40%;
+    z-index: 1;
+    border-radius: 6px;
+}
+
+
+header#cabecalho #produtos li{
+    border: 1px solid #c0c0c0;
+    display: inline;
+    border-radius: 4px;
+    
+}
+
+header#cabecalho #produtos li a{
+    color:rgb(240, 240, 240);
+    text-decoration:none;
+    padding:0px 10px;
+    display:inline-block;
+    transition: color 1s;
+}
+
+header#cabecalho #produtos li a:hover{
+    color: yellow;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+
+/* títulos */
+
+section#titulos{
+    font-family:sans-serif;
+}
+
+section#titulos h2#titulo{
+    margin-left: auto;
+    margin-top: 20px;
+	margin-bottom: auto;
+	text-align: center;
+}
+
+/* Camisas */
+
+figure.cam ul{
+    list-style: none;
+    display: flex;
+
+}
+
+figure.cam li{
+    display: inline-block;
+}
+
+figure.cam img{
+    margin-left: 230px ;
+    margin-top: 30px;
+    border: 12px solid #781f40;
+    border-radius: 30%;
+}
+
+
+.cam:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.03);
+    transition: all 0.5s;
+    cursor: pointer; 
+}
+
+
+figure.cam figcaption{
+    text-align: center;
+    margin-left: 230px;
+}
+
+/* Calças*/
+
+figure.ca ul{
+    list-style: none;
+    display: flex;
+}
+
+figure.ca li{
+    display: inline-block;
+}
+
+figure.ca img{
+    margin-left: 230px ;
+    margin-top: 30px;
+    border: 12px solid #781f40;
+    border-radius: 30%;
+}
+
+.ca:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.03);
+    transition: all 0.5s;
+    cursor: pointer; 
+}
+
+figure.ca figcaption{
+    text-align: center;
+    margin-left: 230px;
+}
+
+/* Calçados */
+
+figure.cd ul{
+    list-style: none;
+    display: flex;
+}
+
+
+figure.cd img{
+    margin-left: 230px ;
+    margin-top: 30px;
+    border: 12px solid #781f40;
+    border-radius: 30%;
+}
+
+.cd:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.03);
+    transition: all 0.5s;
+    cursor: pointer; 
+}
+
+figure.cd figcaption{
+    text-align: center;
+    margin-left: 230px;
+    margin-bottom: 10%;
+}
+
+
+/* rodape bolado */
+
+
+footer#rodape {
+    height: 200px;
+    width: auto;
+    background-color: #1e81b0; /* 'Azul' */
+    margin: 0 -30px -30px -30px;
+    position: relative;
+}
+
+footer#rodape a{
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    font-size: 18pt;
+    text-decoration: none ;
+    color: black;
+}
+
+.sobre-empresa {
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    margin: 20px;
+}
+
+.contato{
+    position: absolute;
+    left: 40%;
+    top: 12%;
+}
+
+.contato #face{ /* imagens dos contatos */
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: -100px;
+    top: 30px;
+}
+
+.contato #insta{ /* imagens dos contatos */
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 30px;
+    left: -30px;
+
+}
+
+
+

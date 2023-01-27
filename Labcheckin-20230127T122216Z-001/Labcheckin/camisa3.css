@@ -1,0 +1,308 @@
+
+body{
+    font-family: Arial;
+    background-color: white;
+    background-image: url("fundo-site.webp");
+}
+
+a{
+    text-decoration: none;
+}
+
+/* cabeçalho */
+
+header#cabecalho{
+    height: 30%;
+    background-color: #1e81b0; /* 'Azul' */
+    margin: -30px -30px 0 -30px;
+    width: auto;
+    position: relative;
+
+}
+
+header#cabecalho .menu{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: cursive;
+    padding: 0;
+    background-color: rgb(52, 53, 58);
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 38%;
+    z-index: 1;
+
+}
+
+header#cabecalho .menu li{
+    border:1px solid #c0c0c0;
+    display: inline;
+    
+}
+
+header#cabecalho .menu li a{
+    color:white;
+    text-decoration:none;
+    padding:5px 10px;
+    display:inline-block;
+    transition: color 1s;
+}
+
+header#cabecalho .menu li a:hover{
+    color: yellow;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+
+header#cabecalho a h1{
+    font-family: cursive;
+    font-size: 32pt;
+    color: black;
+    padding-top: 75px;
+    padding-left: 5%;
+    padding-right;: 5%;
+    text-decoration: none;
+
+}
+
+
+
+
+header#cabecalho input#busca{
+    border-radius: 20px;
+    height:40px;
+    width:450px;
+    position: absolute;
+    left: 70%;
+    top: 70px;
+}
+
+header#cabecalho #btnBusca{
+    position: absolute;
+    left: 91%;
+    top: 80px; 
+	width: 2%;
+	height: 2.5%; 
+	float: left;
+    border: none;
+    background-color: white;
+
+}
+
+
+/* Menu dos produtos */
+
+
+header#cabecalho #produtos{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: cursive;
+    padding: 0;
+    background-color: rgb(41, 41, 46);
+    display: block;
+    position: absolute;
+    bottom: -16px;
+    right: 40%;
+    z-index: 1;
+}
+
+
+header#cabecalho #produtos li{
+    border:1px solid #c0c0c0;
+    display: inline;
+    
+}
+
+header#cabecalho #produtos li a{
+    color:rgb(240, 240, 240);
+    text-decoration:none;
+    padding:5px 10px;
+    display:inline-block;
+    transition: color 1s;
+}
+
+
+/*Corpo do produto */
+
+
+div#corpo{
+    position: relative;
+    border-radius: 20px;
+    border-color: black;
+    background-color: rgb(163, 159, 159);
+    opacity: 70%;
+    width: 1500px;
+    height: 850px;
+    left: 10%;
+    right: 10%;
+    top: 2%;
+    margin-bottom: 100px;
+    
+}
+
+div#corpo img#C1{
+    opacity: 100%;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: 5%;
+    left: 5%;
+    display: block;
+
+}
+
+
+
+
+div#corpo img#C2{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 90%;
+    left: 5%;
+    display: block;
+    opacity: 0.5;
+}
+
+div#corpo img#C2:hover{
+    opacity: 1;
+    transition:all 0.3s ease;
+}
+
+div#corpo img#C3{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 90%;
+    left: 10%;
+    display: block;
+    opacity: 0.5;
+}
+
+
+div#corpo img#C3:hover{
+    opacity: 1;
+    transition:all 0.3s ease;
+}
+
+
+
+div#corpo h1{
+    position: absolute;
+    font-size: 24pt;
+    font-family: sans-serif;
+    color: black;
+    top: 5%;
+    right: 15%;
+    margin-bottom: 20px;
+
+}
+
+div#corpo h2{
+    position: absolute;
+    font-size: 20pt;
+    right: 27%;
+    top: 20% ;
+}
+
+div#corpo button#compra{
+    position: absolute;
+    right: 22px;
+    top: 100px;
+    text-transform: uppercase;
+    font-size: auto;
+    font-weight: bold;
+    background: #0066A2;
+	color: white;
+	border-style: outset;
+	border-color: #0066A2;
+	height: 50px;
+	width: 100px;
+	font: bold15px arial,sans-serif;
+	text-shadow: none;
+    display: block;
+
+
+}
+
+div#corpo button#compra:hover{    /* animação botao */
+    color: #0ec956;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+/* rodape bolado */
+
+
+footer#rodape {
+    height: 200px;
+    width: auto;
+    background-color: #1e81b0; /* 'Azul' */
+    margin: 0 -30px -30px -30px;
+    position: relative;
+}
+
+footer#rodape a{
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    font-size: 18pt;
+    text-decoration: none ;
+    color: black;
+}
+
+.sobre-empresa {
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    margin: 20px;
+}
+
+.contato{
+    position: absolute;
+    left: 40%;
+    top: 12%;
+}
+
+.contato #face{ /* imagens dos contatos */
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: -100px;
+    top: 30px;
+}
+
+.contato #insta{ /* imagens dos contatos */
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 30px;
+    left: -30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
