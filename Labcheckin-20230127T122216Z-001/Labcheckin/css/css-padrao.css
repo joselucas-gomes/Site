@@ -2,12 +2,7 @@
 body{
     font-family: Arial;
     background-color: white;
-    background-image: url('imagens/fundo-site.jpg');
-    background-repeat: no-repeat;
-}
-
-ul li{
-    list-style: none;
+    background-image: url("fundobranco2.jpg");
 }
 
 a{
@@ -17,11 +12,11 @@ a{
 /* cabeçalho */
 
 header#cabecalho{
-    height: 22vh;
-    background: linear-gradient(#1e81b0, #0a406d ); /* 'Azul' */
-    width: 103vw;
-    position: relative;
+    height: 30%;
+    background-color: #1e81b0; /* 'Azul' */
     margin: -30px -30px 0 -30px;
+    width: auto;
+    position: relative;
 
 }
 
@@ -41,7 +36,7 @@ header#cabecalho .menu{
 
 header#cabecalho .menu li{
     border:1px solid #c0c0c0;
-    display: flex;
+    display: inline;
     
 }
 
@@ -64,12 +59,11 @@ header#cabecalho .menu li a:hover{
 
 
 header#cabecalho a h1{
-    font-family: cuckoo;
+    font-family: cursive;
     font-size: 32pt;
     color: black;
     padding-top: 75px;
     padding-left: 5%;
-    padding-right: 5%;
     text-decoration: none;
 
 }
@@ -113,136 +107,136 @@ header#cabecalho #produtos{
     bottom: -16px;
     right: 40%;
     z-index: 1;
-    border-radius: 6px;
 }
 
 
 header#cabecalho #produtos li{
-    border: 1px solid #c0c0c0;
+    border:1px solid #c0c0c0;
     display: inline;
-    border-radius: 4px;
     
 }
 
 header#cabecalho #produtos li a{
     color:rgb(240, 240, 240);
     text-decoration:none;
-    padding:0px 10px;
+    padding:5px 10px;
     display:inline-block;
     transition: color 1s;
 }
 
-header#cabecalho #produtos li a:hover{
-    color: yellow;
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    transition: all 0.5s;
+
+/*Corpo do produto */
+
+
+div#corpo{
+    position: relative;
+    display: flex;
+    border-radius: 20px;
+    border-color: black;
+    background-color: rgb(163, 159, 159);
+    opacity: 70%;
+    width: 1500px;
+    height: 850px;
+    left: 10%;
+    right: 10%;
+    top: 2%;
+    margin-bottom: 100px;
+    
+}
+
+div#corpo img#c1{
+    opacity: 100%;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: 5%;
+    left: 5%;
+    display: flex;
+
+}
+
+
+
+
+div#corpo img#c2{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 90%;
+    left: 5%;
+    display: block;
+    opacity: 0.5;
+}
+
+div#corpo img#c2:hover{
+    opacity: 1;
+    transition:all 0.3s ease;
+}
+
+div#corpo img#c3{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 90%;
+    left: 10%;
+    display: block;
+    opacity: 0.5;
+}
+
+
+div#corpo img#C3:hover{
+    opacity: 1;
+    transition:all 0.3s ease;
+}
+
+
+
+div#corpo h1{
+    position: absolute;
+    font-size: 24pt;
+    font-family: sans-serif;
+    color: black;
+    top: 5%;
+    right: 15%;
+    margin-bottom: 20px;
+
+}
+
+div#corpo h2{
+    position: absolute;
+    font-size: 20pt;
+    right: 27%;
+    top: 20% ;
+}
+
+div#corpo button#compra{
+    position: absolute;
+    right: 22px;
+    top: 100px;
+    text-transform: uppercase;
+    font-size: auto;
+    font-weight: bold;
+    background: #0066A2;
+	color: white;
+	border-style: outset;
+	border-color: #0066A2;
+	height: 50px;
+	width: 100px;
+	font: bold15px arial,sans-serif;
+	text-shadow: none;
+    display: block;
+
+
+}
+
+div#corpo button#compra:hover{    /* animação botao */
+    color: #0ec956;
+    transition: all 0.3s;
     cursor: pointer;
+    text-decoration: underline;
 }
 
 
-
-
-
-/* títulos */
-
-section#titulos{
-    font-family:sans-serif;
-}
-
-section#titulos h2#titulo{
-    margin-left: auto;
-    margin-top: 20px;
-	margin-bottom: auto;
-	text-align: center;
-}
-
-/* Camisas */
-
-figure.cam ul{
-    list-style: none;
-    display: flex;
-
-}
-
-figure.cam img{
-    margin-left: 230px ;
-    margin-top: 30px;
-    border: 12px solid #781f40;
-    border-radius: 30%;
-}
-
-
-.cam:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.03);
-    transition: all 0.5s;
-    cursor: pointer; 
-}
-
-
-figure.cam figcaption{
-    text-align: center;
-    margin-left: 230px;
-}
-
-/* Calças*/
-
-figure.ca ul{
-    list-style: none;
-    display: flex;
-}
-
-figure.ca li{
-    display: inline-block;
-}
-
-figure.ca img{
-    margin-left: 230px ;
-    margin-top: 30px;
-    border: 12px solid #781f40;
-    border-radius: 30%;
-}
-
-.ca:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.03);
-    transition: all 0.5s;
-    cursor: pointer; 
-}
-
-figure.ca figcaption{
-    text-align: center;
-    margin-left: 230px;
-}
-
-/* Calçados */
-
-figure.cd ul{
-    list-style: none;
-    display: flex;
-}
-
-
-figure.cd img{
-    margin-left: 230px ;
-    margin-top: 30px;
-    border: 12px solid #781f40;
-    border-radius: 30%;
-}
-
-.cd:hover{
-    -webkit-transform: scale(1.1);
-    transform: scale(1.03);
-    transition: all 0.5s;
-    cursor: pointer; 
-}
-
-figure.cd figcaption{
-    text-align: center;
-    margin-left: 230px;
-    margin-bottom: 10%;
-}
 
 
 /* rodape bolado */
@@ -251,7 +245,7 @@ figure.cd figcaption{
 footer#rodape {
     height: 200px;
     width: auto;
-    background: linear-gradient(#1e81b0, #0a406d ); /* 'Azul' */
+    background-color: #1e81b0; /* 'Azul' */
     margin: 0 -30px -30px -30px;
     position: relative;
 }
@@ -294,6 +288,21 @@ footer#rodape a{
     left: -30px;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
