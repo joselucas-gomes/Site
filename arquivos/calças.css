@@ -138,12 +138,12 @@ header#cabecalho #produtos li a:hover{
 }
 
 
-
 /*Corpo do produto */
 
 
 div#corpo{
     position: relative;
+    display: flex;
     border-radius: 20px;
     border-color: black;
     background-color: rgb(163, 159, 159);
@@ -157,20 +157,20 @@ div#corpo{
     
 }
 
-div#corpo img#C1{
+div#corpo img#c1{
     position: absolute;
     width: 700px;
     height: 700px;
     top: 5%;
     left: 5%;
-    display: block;
+    display: flex;
 
 }
 
 
 
 
-div#corpo img#C2{
+div#corpo img#c2{
     position: absolute;
     width: 64px;
     height: 64px;
@@ -180,12 +180,12 @@ div#corpo img#C2{
     opacity: 0.5;
 }
 
-div#corpo img#C2:hover{
+div#corpo img#c2:hover{
     opacity: 1;
     transition:all 0.3s ease;
 }
 
-div#corpo img#C3{
+div#corpo img#c3{
     position: absolute;
     width: 64px;
     height: 64px;
@@ -209,7 +209,7 @@ div#corpo h1{
     font-family: sans-serif;
     color: black;
     top: 5%;
-    right: 20%;
+    right: 15%;
     margin-bottom: 20px;
 
 }
@@ -241,63 +241,11 @@ div#corpo button#compra{
 
 }
 
-
-
-/* rodape bolado */
-
-
-footer#rodape {
-    min-height: 200px;
-    min-width: 1944px;
-    background: linear-gradient(#1e81b0, #0a406d ); /* 'Azul' */
-    margin: 0 -30px -30px -30px;
-    position: relative;
+div#corpo button#compra:hover{    /* animação botao */
+    color: #0ec956;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-decoration: underline;
 }
-
-footer#rodape a{
-    position: absolute;
-    right: 5%;
-    top: 30%;
-    font-size: 18pt;
-    text-decoration: none ;
-    color: black;
-}
-
-.sobre-empresa {
-    position: absolute;
-    left: 2%;
-    top: 5%;
-    margin: 20px;
-}
-
-.contato{
-    position: absolute;
-    left: 40%;
-    top: 12%;
-}
-
-.contato #face{ /* imagens dos contatos */
-    width: 64px;
-    height: 64px;
-    position: absolute;
-    left: -100px;
-    top: 30px;
-}
-
-.contato #insta{ /* imagens dos contatos */
-    width: 64px;
-    height: 64px;
-    position: absolute;
-    top: 30px;
-    left: -30px;
-
-}
-
-
-
-
-
-
-
 
 
